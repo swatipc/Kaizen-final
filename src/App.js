@@ -8,6 +8,8 @@ import {
 
 import AppHeader from './components/App_Header';
 import Home from './pages/Home';
+import RegistrationPage from './RegistrationPage';
+
 
 const styles = theme => ({
   main: {

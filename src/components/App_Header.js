@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { withAuth } from '@okta/okta-react';
 import {
   AppBar,
   Toolbar,
@@ -13,7 +15,7 @@ const styles = {
       flex: 1,
     },
   };
-  
+
   const AppHeader = ({ classes }) => (
   <AppBar position="static">
     <Toolbar>
@@ -21,6 +23,7 @@ const styles = {
         Kaizen Stock Exchange
       </Typography>
       <div className={classes.flex} />
+
       <LoginButton />
     </Toolbar>
   </AppBar>
